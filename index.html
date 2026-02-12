@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArijitPedia – Free PDF Resources | Excel, MS Word & More by Arijit Mahata</title>
+
+  <!-- SEO META TAGS -->
+  <meta name="description" content="ArijitPedia – India's #1 free PDF resource hub for Excel, MS Word, PowerPoint & computer shortcuts. Developed by Arijit Mahata, India's Best Coding Teacher." />
+  <meta name="keywords" content="free PDF download, Excel PDF Bengali, MS Word PDF, PowerPoint PDF Bengali, computer shortcuts PDF, Arijit Mahata, India best coding teacher, ArijitPedia, free study material" />
+  <meta name="author" content="Arijit Mahata" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#FF6B1A" />
+  <link rel="canonical" href="https://arijitpedia.in/" />
+  <meta property="og:title" content="ArijitPedia – Free PDF Resources by Arijit Mahata" />
+  <meta property="og:description" content="Download free PDF study materials for Excel, MS Word, PowerPoint & more. By Arijit Mahata – India's Best Coding Teacher." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arijitpedia.in/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ArijitPedia – Free PDF Resources" />
+  <meta name="twitter:description" content="Free PDFs for Excel, MS Word, PowerPoint by Arijit Mahata – India's Best Coding Teacher." />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"ArijitPedia","url":"https://arijitpedia.in","description":"Free PDF educational resources by Arijit Mahata, India's Best Coding Teacher","author":{"@type":"Person","name":"Arijit Mahata","jobTitle":"India's Best Coding Teacher","nationality":"Indian"},"offers":{"@type":"Offer","price":"0","priceCurrency":"INR","description":"Free PDF downloads for computer education"}}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300;400;600;700;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --or:#FF6B1A; --or-lt:#FF8C42; --or-dk:#CC4A00;
+      --or-glow:rgba(255,107,26,.30);
+      --sv:#C8D4DC; --sv-lt:#E8EFF5; --sv-dk:#8898A8;
+      --bg:#09090C; --bg2:#111318; --bg3:#181D25;
+      --wh:#FFFFFF; --mu:#7A8898;
+      --bd:rgba(200,212,220,.10); --bdo:rgba(255,107,26,.22);
+      --fd:'Bebas Neue',cursive; --fb:'Raleway',sans-serif; --fm:'Fira Code',monospace;
+      --r:14px; --tr:.35s cubic-bezier(.4,0,.2,1);
+      --so:0 0 40px rgba(255,107,26,.18);
+      --sc:0 8px 40px rgba(0,0,0,.5);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{background:var(--bg);color:var(--wh);font-family:var(--fb);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    a{text-decoration:none;color:inherit}
+    button{cursor:pointer;border:none;background:none;font-family:inherit}
+    ::-webkit-scrollbar{width:6px}
+    ::-webkit-scrollbar-track{background:var(--bg)}
+    ::-webkit-scrollbar-thumb{background:var(--or-dk);border-radius:4px}
+    ::-webkit-scrollbar-thumb:hover{background:var(--or)}
+
+    /* BG LAYERS */
+    .bgl{position:fixed;inset:0;z-index:0;pointer-events:none;
+      background:radial-gradient(ellipse 70% 45% at 15% 5%,rgba(255,107,26,.10) 0%,transparent 65%),
+                radial-gradient(ellipse 55% 55% at 85% 85%,rgba(200,212,220,.05) 0%,transparent 60%),
+                radial-gradient(ellipse 90% 70% at 50% 50%,var(--bg) 0%,transparent 100%)}
+    .gbg{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.04;
+      background-image:linear-gradient(var(--sv) 1px,transparent 1px),linear-gradient(90deg,var(--sv) 1px,transparent 1px);
+      background-size:60px 60px}
+    .particles{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+    .particle{position:absolute;bottom:-20px;border-radius:50%;background:var(--or);opacity:0;animation:floatUp linear infinite}
+    @keyframes floatUp{0%{transform:translateY(0) scale(0);opacity:0}15%{opacity:.55}85%{opacity:.2}100%{transform:translateY(-110vh) scale(1.2);opacity:0}}
+
+    .wrapper{position:relative;z-index:1}
+
+    /* RIBBON */
+    .ribbon{background:linear-gradient(90deg,var(--or-dk) 0%,var(--or) 50%,var(--or-dk) 100%);overflow:hidden;padding:7px 0;white-space:nowrap}
+    .rt{display:inline-block;animation:rs 22s linear infinite;font-family:var(--fm);font-size:.72rem;font-weight:600;letter-spacing:.12em;color:var(--bg)}
+    .rt span{margin:0 28px}
+    @keyframes rs{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 28px;height:68px;background:rgba(9,9,12,.88);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border-bottom:1px solid var(--bdo)}
+    .nl{display:flex;flex-direction:column;line-height:1}
+    .nlo{font-family:var(--fd);font-size:2rem;letter-spacing:.05em;background:linear-gradient(120deg,var(--or) 30%,var(--sv-lt) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .nls{font-family:var(--fm);font-size:.58rem;color:var(--mu);letter-spacing:.14em;text-transform:uppercase}
+    .navlinks{display:flex;align-items:center;gap:4px;list-style:none}
+    .navlinks li a{display:block;padding:8px 16px;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sv);border-radius:30px;transition:var(--tr);position:relative}
+    .navlinks li a::after{content:'';position:absolute;left:50%;bottom:3px;transform:translateX(-50%);width:0;height:2px;background:var(--or);border-radius:2px;transition:var(--tr)}
+    .navlinks li a:hover,.navlinks li a.active{color:var(--or)}
+    .navlinks li a:hover::after,.navlinks li a.active::after{width:55%}
+    .hbg{display:none;flex-direction:column;gap:5px;padding:6px;z-index:300}
+    .hbg span{display:block;width:26px;height:2px;background:var(--or);border-radius:2px;transition:var(--tr);transform-origin:center}
+    .hbg.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .hbg.open span:nth-child(2){transform:scaleX(0);opacity:0}
+    .hbg.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .mnav{display:none;position:fixed;inset:0;z-index:250;background:rgba(9,9,12,.97);backdrop-filter:blur(24px);flex-direction:column;align-items:center;justify-content:center;gap:32px;opacity:0;pointer-events:none;transition:opacity .3s ease}
+    .mnav.visible{display:flex;opacity:1;pointer-events:all}
+    .mnav a{font-family:var(--fd);font-size:2.8rem;letter-spacing:.06em;color:var(--sv-lt);transition:var(--tr);position:relative}
+    .mnav a::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:3px;background:var(--or);border-radius:2px;transition:var(--tr)}
+    .mnav a:hover{color:var(--or)}
+    .mnav a:hover::after{width:100%}
+
+    /* PAGE */
+    .page{display:none}
+    .page.active{display:block;animation:pageIn .5s ease forwards}
+    @keyframes pageIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+    /* HERO */
+    .hero{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 60px;position:relative}
+    .hbadge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,107,26,.10);border:1px solid var(--bdo);border-radius:50px;padding:7px 20px;font-family:var(--fm);font-size:.7rem;letter-spacing:.14em;color:var(--or-lt);text-transform:uppercase;margin-bottom:32px;animation:fadeUp .7s .1s ease both}
+    .pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--or);box-shadow:0 0 0 0 var(--or-glow);animation:pulseAnim 1.8s ease infinite}
+    @keyframes pulseAnim{0%{box-shadow:0 0 0 0 var(--or-glow)}70%{box-shadow:0 0 0 10px rgba(255,107,26,0)}100%{box-shadow:0 0 0 0 rgba(255,107,26,0)}}
+    .htitle{font-family:var(--fd);font-size:clamp(4rem,14vw,10rem);line-height:.88;letter-spacing:.03em;margin-bottom:20px;animation:fadeUp .8s .2s ease both}
+    .htitle .l1{display:block;color:var(--wh)}
+    .htitle .l2{display:block;background:linear-gradient(120deg,var(--or) 0%,var(--sv-lt) 60%,var(--or-lt) 100%);background-size:200% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:fadeUp .8s .2s ease both,shimT 4s linear infinite}
+    @keyframes shimT{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+    .hsub{font-size:clamp(.95rem,2.5vw,1.2rem);color:var(--sv-dk);max-width:540px;line-height:1.7;font-weight:400;margin-bottom:44px;animation:fadeUp .8s .35s ease both}
+    .hsub strong{color:var(--or-lt);font-weight:700}
+    .hctas{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;animation:fadeUp .8s .5s ease both}
+    .btp{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--or) 0%,var(--or-dk) 100%);color:var(--wh);padding:14px 32px;border-radius:50px;font-weight:700;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 8px 30px var(--or-glow);transition:var(--tr);position:relative;overflow:hidden}
+    .btp::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--or-lt) 0%,var(--or) 100%);opacity:0;transition:var(--tr)}
+    .btp:hover{transform:translateY(-3px);box-shadow:0 14px 40px var(--or-glow)}
+    .btp:hover::before{opacity:1}
+    .btp span,.btp em{position:relative;z-index:1;font-style:normal}
+    .bto{display:inline-flex;align-items:center;gap:10px;border:1.5px solid var(--bdo);color:var(--sv);padding:14px 32px;border-radius:50px;font-weight:700;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase;transition:var(--tr)}
+    .bto:hover{border-color:var(--or);color:var(--or);background:rgba(255,107,26,.07);transform:translateY(-3px)}
+    .hstats{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin-top:64px;animation:fadeUp .8s .65s ease both}
+    .stch{background:var(--bg3);border:1px solid var(--bd);border-radius:var(--r);padding:18px 28px;text-align:center;transition:var(--tr)}
+    .stch:hover{border-color:var(--bdo);transform:translateY(-4px);box-shadow:var(--so)}
+    .stch .num{font-family:var(--fd);font-size:2.5rem;letter-spacing:.04em;background:linear-gradient(135deg,var(--or),var(--sv-lt));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
+    .stch .lbl{font-size:.72rem;color:var(--mu);letter-spacing:.1em;text-transform:uppercase;margin-top:4px;font-family:var(--fm)}
+
+    /* SECTION */
+    .section{padding:80px 24px;max-width:1100px;margin:0 auto}
+    .sh{text-align:center;margin-bottom:60px}
+    .stag{display:inline-block;font-family:var(--fm);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:14px}
+    .stitle{font-family:var(--fd);font-size:clamp(2.4rem,6vw,4rem);letter-spacing:.04em;line-height:.95;color:var(--wh)}
+    .stitle em{font-style:normal;background:linear-gradient(120deg,var(--or),var(--sv-lt));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .sdesc{font-size:1rem;color:var(--sv-dk);max-width:500px;margin:16px auto 0;line-height:1.7}
+    .div{width:60px;height:3px;margin:18px auto 0;background:linear-gradient(90deg,var(--or),var(--or-dk));border-radius:2px}
+
+    /* FEATURES */
+    .fstrip{background:var(--bg2);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:40px 24px}
+    .fin{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+    .fi{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px}
+    .fic{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;background:rgba(255,107,26,.10);border:1px solid var(--bdo)}
+    .fil{font-size:.88rem;font-weight:700;color:var(--sv-lt)}
+    .fis{font-size:.75rem;color:var(--mu)}
+
+    /* PDF CARDS */
+    .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+    .pcard{background:var(--bg2);border:1px solid var(--bd);border-radius:18px;overflow:hidden;transition:var(--tr);position:relative;opacity:0;transform:translateY(30px)}
+    .pcard.revealed{animation:cardUp .6s ease forwards}
+    @keyframes cardUp{to{opacity:1;transform:translateY(0)}}
+    .pcard:hover{border-color:var(--bdo);transform:translateY(-8px);box-shadow:0 20px 60px rgba(255,107,26,.15)}
+    .ch{position:relative;height:160px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .chbg{position:absolute;inset:0;background:linear-gradient(135deg,var(--bg3) 0%,var(--bg2) 100%)}
+    .chpat{position:absolute;inset:0;opacity:.06;background-image:repeating-linear-gradient(45deg,var(--or) 0,var(--or) 1px,transparent 0,transparent 50%);background-size:14px 14px}
+    .cion{position:relative;z-index:1;width:72px;height:72px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:2rem;background:linear-gradient(135deg,rgba(255,107,26,.2),rgba(255,107,26,.05));border:1px solid var(--bdo);box-shadow:0 8px 32px rgba(255,107,26,.15)}
+    .cbadge{position:absolute;top:14px;right:14px;z-index:2;background:rgba(255,107,26,.15);border:1px solid var(--bdo);border-radius:20px;padding:4px 12px;font-family:var(--fm);font-size:.62rem;letter-spacing:.1em;color:var(--or-lt);text-transform:uppercase}
+    .cfree{position:absolute;top:14px;left:14px;z-index:2;background:linear-gradient(135deg,var(--or),var(--or-dk));border-radius:20px;padding:4px 12px;font-family:var(--fm);font-size:.6rem;font-weight:600;letter-spacing:.12em;color:white;text-transform:uppercase}
+    .cb{padding:22px 22px 20px}
+    .ccat{font-family:var(--fm);font-size:.65rem;letter-spacing:.14em;color:var(--or);text-transform:uppercase;margin-bottom:8px}
+    .ctit{font-weight:800;font-size:1.05rem;line-height:1.35;color:var(--wh);margin-bottom:10px}
+    .cdesc{font-size:.85rem;color:var(--mu);line-height:1.6;margin-bottom:20px}
+    .cmeta{display:flex;gap:16px;margin-bottom:20px}
+    .cmeta span{display:flex;align-items:center;gap:6px;font-family:var(--fm);font-size:.68rem;color:var(--sv-dk);letter-spacing:.06em}
+    .bdl{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,var(--or) 0%,var(--or-dk) 100%);color:white;padding:13px 20px;border-radius:10px;font-weight:700;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;transition:var(--tr);box-shadow:0 6px 24px var(--or-glow);position:relative;overflow:hidden;text-decoration:none}
+    .bdl::after{content:'';position:absolute;inset:0;background:rgba(255,255,255,.08);transform:translateX(-100%) skewX(-15deg);transition:.5s ease}
+    .bdl:hover{transform:scale(1.02);box-shadow:0 10px 36px var(--or-glow)}
+    .bdl:hover::after{transform:translateX(110%) skewX(-15deg)}
+
+    /* ABOUT */
+    .ahero{background:linear-gradient(135deg,var(--bg2) 0%,var(--bg3) 100%);border-bottom:1px solid var(--bd);padding:80px 24px;text-align:center;position:relative;overflow:hidden}
+    .ahero::before{content:'ARIJIT';position:absolute;top:-30px;left:50%;transform:translateX(-50%);font-family:var(--fd);font-size:clamp(6rem,20vw,14rem);color:rgba(255,107,26,.04);letter-spacing:.05em;white-space:nowrap;pointer-events:none}
+    .aav{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,var(--or),var(--or-dk));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:3.5rem;color:white;margin:0 auto 24px;box-shadow:0 0 0 6px rgba(255,107,26,.15),0 20px 60px rgba(255,107,26,.25);animation:avf 4s ease-in-out infinite}
+    @keyframes avf{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+    .aname{font-family:var(--fd);font-size:clamp(2.5rem,8vw,5rem);letter-spacing:.04em;line-height:.9;background:linear-gradient(120deg,var(--or) 20%,var(--sv-lt) 80%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .arole{font-family:var(--fm);font-size:.85rem;letter-spacing:.16em;color:var(--or-lt);text-transform:uppercase;margin-top:8px}
+    .atag{font-size:1.1rem;color:var(--sv-dk);margin-top:16px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.7}
+    .acards{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;padding:60px 24px}
+    .ac{background:var(--bg2);border:1px solid var(--bd);border-radius:18px;padding:28px 24px;transition:var(--tr)}
+    .ac:hover{border-color:var(--bdo);transform:translateY(-6px);box-shadow:var(--sc)}
+    .aci{font-size:2rem;margin-bottom:14px}
+    .act{font-weight:800;font-size:1rem;color:var(--or-lt);margin-bottom:10px}
+    .acd{font-size:.875rem;color:var(--mu);line-height:1.65}
+    .mblock{max-width:800px;margin:0 auto;padding:0 24px 80px;text-align:center}
+    .bq{font-family:var(--fd);font-size:clamp(1.8rem,5vw,3.2rem);letter-spacing:.04em;line-height:1.2;color:var(--wh);margin-bottom:24px}
+    .bq em{font-style:normal;color:var(--or)}
+    .mblock p{font-size:1rem;color:var(--sv-dk);line-height:1.75;margin-bottom:16px}
+    .ssec{max-width:800px;margin:0 auto;padding:0 24px 80px}
+    .sr{margin-bottom:20px}
+    .srt{display:flex;justify-content:space-between;font-size:.85rem;font-weight:700;color:var(--sv-lt);margin-bottom:8px}
+    .srt span:last-child{color:var(--or);font-family:var(--fm)}
+    .sb{height:6px;background:var(--bg3);border-radius:4px;overflow:hidden}
+    .sf{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--or-dk),var(--or-lt));width:0;transition:width 1.5s cubic-bezier(.4,0,.2,1)}
+
+    /* FOOTER */
+    footer{background:var(--bg2);border-top:1px solid var(--bd);padding:50px 24px 30px;text-align:center}
+    .flogo{font-family:var(--fd);font-size:2.8rem;letter-spacing:.05em;background:linear-gradient(120deg,var(--or),var(--sv-lt));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px}
+    .fdev{font-family:var(--fm);font-size:.72rem;letter-spacing:.14em;color:var(--mu);margin-bottom:24px}
+    .fdev strong{color:var(--or-lt)}
+    .flinks{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:32px}
+    .flinks a{font-size:.78rem;font-weight:600;letter-spacing:.08em;color:var(--sv-dk);text-transform:uppercase;padding:6px 14px;border-radius:20px;border:1px solid var(--bd);transition:var(--tr)}
+    .flinks a:hover{color:var(--or);border-color:var(--bdo)}
+    .fcopy{font-size:.75rem;color:var(--mu);line-height:1.7}
+    .fcopy strong{color:var(--or-lt)}
+
+    /* TOAST */
+    .toast{position:fixed;bottom:28px;right:24px;z-index:9999;background:var(--bg3);border:1px solid var(--bdo);border-radius:var(--r);padding:14px 20px;display:flex;align-items:center;gap:12px;box-shadow:0 12px 40px rgba(0,0,0,.5);transform:translateY(80px);opacity:0;transition:var(--tr);max-width:320px}
+    .toast.show{transform:translateY(0);opacity:1}
+    .ticon{font-size:1.4rem;flex-shrink:0}
+    .ttxt{font-size:.85rem;color:var(--sv-lt);line-height:1.4}
+    .ttxt strong{color:var(--or-lt);display:block;font-size:.9rem}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+    /* MOBILE */
+    @media(max-width:768px){
+      nav{padding:0 18px;height:60px}
+      .navlinks{display:none}
+      .hbg{display:flex}
+      .hero{padding:60px 18px 40px}
+      .hstats{flex-direction:column;align-items:stretch;gap:12px}
+      .stch{padding:14px 20px}
+      .hctas{flex-direction:column;width:100%}
+      .btp,.bto{width:100%;justify-content:center}
+      .fin{grid-template-columns:repeat(2,1fr)}
+      .section{padding:50px 18px}
+      .pgrid{grid-template-columns:1fr}
+      .acards{grid-template-columns:1fr;padding:40px 18px}
+      .ahero{padding:60px 18px}
+      .flinks{gap:4px}
+      .flinks a{font-size:.7rem;padding:5px 10px}
+      .toast{bottom:16px;right:16px;left:16px;max-width:100%}
+    }
+    @media(max-width:420px){
+      .fin{grid-template-columns:1fr 1fr;gap:12px}
+      .fic{width:42px;height:42px;font-size:1.2rem}
+    }
+  </style>
+</head>
+<body>
+<div class="bgl"></div>
+<div class="gbg"></div>
+<div class="particles" id="particles"></div>
+
+<div class="wrapper">
+
+  <!-- RIBBON -->
+  <div class="ribbon" aria-label="Developer credits">
+    <div class="rt" id="rt"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nl">
+      <span class="nlo">ArijitPedia</span>
+      <span class="nls">by Arijit Mahata</span>
+    </div>
+    <ul class="navlinks">
+      <li><a href="#" data-page="home" class="active">Home</a></li>
+      <li><a href="#" data-page="pdfs">PDFs</a></li>
+      <li><a href="#" data-page="about">About</a></li>
+    </ul>
+    <button class="hbg" id="hbg" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mnav" id="mnav" role="navigation" aria-label="Mobile navigation">
+    <button class="hbg open" id="mclose" aria-label="Close menu" style="position:absolute;top:20px;right:18px;">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#" data-page="home" data-mob="true">Home</a>
+    <a href="#" data-page="pdfs" data-mob="true">PDFs</a>
+    <a href="#" data-page="about" data-mob="true">About</a>
+  </div>
+
+  <!-- ===================== HOME ===================== -->
+  <div id="page-home" class="page active" role="main">
+    <section class="hero" aria-labelledby="ht">
+      <div class="hbadge">
+        <span class="pulse-dot"></span>
+        Developed by Arijit Mahata &middot; India's Best Coding Teacher
+      </div>
+      <h1 class="htitle" id="ht">
+        <span class="l1">Arijit</span>
+        <span class="l2">Pedia</span>
+      </h1>
+      <p class="hsub">
+        Your <strong>FREE</strong> library of premium PDF study materials &mdash; Excel, MS Word, PowerPoint, Computer Shortcuts &amp; more. Curated by <strong>Arijit Mahata</strong>, India's Best Coding Teacher.
+      </p>
+      <div class="hctas">
+        <a href="#" class="btp" data-page="pdfs">
+          <em>📂</em><span>Browse Free PDFs</span>
+        </a>
+        <a href="#" class="bto" data-page="about">
+          <span>About Developer</span>
+        </a>
+      </div>
+      <div class="hstats" role="list">
+        <div class="stch" role="listitem"><div class="num">3+</div><div class="lbl">Free PDFs</div></div>
+        <div class="stch" role="listitem"><div class="num">100%</div><div class="lbl">Free Forever</div></div>
+        <div class="stch" role="listitem"><div class="num">#1</div><div class="lbl">Coding Teacher</div></div>
+        <div class="stch" role="listitem"><div class="num">&#8734;</div><div class="lbl">Knowledge</div></div>
+      </div>
+    </section>
+
+    <div class="fstrip">
+      <div class="fin">
+        <div class="fi"><div class="fic">📥</div><div class="fil">Free Download</div><div class="fis">No sign-up needed</div></div>
+        <div class="fi"><div class="fic">📖</div><div class="fil">Expert Content</div><div class="fis">Curated by Arijit Mahata</div></div>
+        <div class="fi"><div class="fic">📱</div><div class="fil">Mobile Friendly</div><div class="fis">Works on all devices</div></div>
+        <div class="fi"><div class="fic">🇮🇳</div><div class="fil">Made in India</div><div class="fis">India's Best Coding Teacher</div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sh">
+        <span class="stag">✦ Arijit Mahata Presents</span>
+        <h2 class="stitle">Featured <em>Free PDFs</em></h2>
+        <p class="sdesc">Handpicked study material to boost your computer skills &mdash; all absolutely free.</p>
+        <div class="div"></div>
+      </div>
+      <div class="pgrid" id="homegrid"></div>
+      <div style="text-align:center;margin-top:40px">
+        <a href="#" class="btp" data-page="pdfs" style="display:inline-flex">
+          <em>📚</em><span>View All PDFs</span>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="flogo">ArijitPedia</div>
+      <div class="fdev">Developed with ❤️ by <strong>Arijit Mahata</strong> &middot; India's Best Coding Teacher</div>
+      <div class="flinks">
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="pdfs">PDF Library</a>
+        <a href="#" data-page="about">About</a>
+      </div>
+      <p class="fcopy">© 2025 <strong>ArijitPedia</strong> &middot; All PDFs are freely available for educational use.<br>Developed by <strong>Arijit Mahata</strong> — India's Best Coding Teacher 🇮🇳</p>
+    </footer>
+  </div>
+
+  <!-- ===================== PDFs ===================== -->
+  <div id="page-pdfs" class="page">
+    <div class="section">
+      <div class="sh">
+        <span class="stag">✦ Free Resources by Arijit Mahata</span>
+        <h2 class="stitle">PDF <em>Library</em></h2>
+        <p class="sdesc">Download all study materials for free. No registration, no cost — just pure knowledge.</p>
+        <div class="div"></div>
+      </div>
+      <div class="pgrid" id="allgrid"></div>
+    </div>
+    <footer>
+      <div class="flogo">ArijitPedia</div>
+      <div class="fdev">Developed with ❤️ by <strong>Arijit Mahata</strong> &middot; India's Best Coding Teacher</div>
+      <div class="flinks">
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="pdfs">PDF Library</a>
+        <a href="#" data-page="about">About</a>
+      </div>
+      <p class="fcopy">© 2025 <strong>ArijitPedia</strong> &middot; Developed by <strong>Arijit Mahata</strong> — India's Best Coding Teacher 🇮🇳</p>
+    </footer>
+  </div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <div id="page-about" class="page">
+    <div class="ahero">
+      <div class="aav" aria-hidden="true">AM</div>
+      <h1 class="aname">Arijit Mahata</h1>
+      <p class="arole">🏆 India's Best Coding Teacher · Developer · Educator</p>
+      <p class="atag">Passionate about making technology education free and accessible to every Indian student.</p>
+    </div>
+
+    <div class="acards">
+      <div class="ac"><div class="aci">👨‍💻</div><h3 class="act">Who is Arijit Mahata?</h3><p class="acd">Arijit Mahata is widely recognised as India's Best Coding Teacher — dedicated to making computer science, programming and office software education freely accessible to every student across India.</p></div>
+      <div class="ac"><div class="aci">🎯</div><h3 class="act">Mission of ArijitPedia</h3><p class="acd">ArijitPedia was built with a single purpose — to provide high-quality, free PDF study materials covering MS Excel, MS Word, PowerPoint, computer shortcuts, and more to learners of all backgrounds.</p></div>
+      <div class="ac"><div class="aci">🌍</div><h3 class="act">Made in India 🇮🇳</h3><p class="acd">Proudly built in India by Arijit Mahata. This platform represents the spirit of Digital India — making knowledge borderless, free, and accessible in every corner of the country.</p></div>
+      <div class="ac"><div class="aci">📚</div><h3 class="act">What You'll Find Here</h3><p class="acd">Downloadable PDFs for Microsoft Excel, MS Word, PowerPoint (in Bengali and English), computer keyboard shortcuts, and more educational resources — all completely free.</p></div>
+      <div class="ac"><div class="aci">🚀</div><h3 class="act">Always Expanding</h3><p class="acd">ArijitPedia is continuously growing. Arijit Mahata regularly curates and adds new PDF resources to ensure students always have access to the most useful and updated study materials.</p></div>
+      <div class="ac"><div class="aci">❤️</div><h3 class="act">Free Forever</h3><p class="acd">Every single resource on ArijitPedia is free — no hidden charges, no subscriptions, no registration. Arijit Mahata believes quality education should never come with a price tag.</p></div>
+    </div>
+
+    <div class="mblock">
+      <p class="bq">"Knowledge is the greatest gift.<br><em>Giving it for free</em> is the greatest service."</p>
+      <p>ArijitPedia was born from a simple belief — every student in India deserves access to quality educational content without any financial barrier. Arijit Mahata, recognised as India's Best Coding Teacher, has channelled years of teaching experience into this platform.</p>
+      <p>Whether you are a student, a professional, or someone looking to upskill in Microsoft Office tools, ArijitPedia has something for you — and it will always be free.</p>
+    </div>
+
+    <div class="ssec">
+      <div style="margin-bottom:32px">
+        <span class="stag">✦ Expertise</span>
+        <h2 class="stitle" style="font-size:2.2rem">Teaching <em>Skills</em></h2>
+      </div>
+      <div class="sr"><div class="srt"><span>Microsoft Excel</span><span>97%</span></div><div class="sb"><div class="sf" data-w="97"></div></div></div>
+      <div class="sr"><div class="srt"><span>Microsoft Word</span><span>95%</span></div><div class="sb"><div class="sf" data-w="95"></div></div></div>
+      <div class="sr"><div class="srt"><span>PowerPoint</span><span>93%</span></div><div class="sb"><div class="sf" data-w="93"></div></div></div>
+      <div class="sr"><div class="srt"><span>Web Development</span><span>99%</span></div><div class="sb"><div class="sf" data-w="99"></div></div></div>
+      <div class="sr"><div class="srt"><span>Computer Education</span><span>100%</span></div><div class="sb"><div class="sf" data-w="100"></div></div></div>
+    </div>
+
+    <footer>
+      <div class="flogo">ArijitPedia</div>
+      <div class="fdev">Developed with ❤️ by <strong>Arijit Mahata</strong> &middot; India's Best Coding Teacher</div>
+      <div class="flinks">
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="pdfs">PDF Library</a>
+        <a href="#" data-page="about">About</a>
+      </div>
+      <p class="fcopy">© 2025 <strong>ArijitPedia</strong> &middot; Developed by <strong>Arijit Mahata</strong> — India's Best Coding Teacher 🇮🇳</p>
+    </footer>
+  </div>
+
+</div><!-- /wrapper -->
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="alert" aria-live="polite">
+  <span class="ticon" id="ticon">📥</span>
+  <div class="ttxt">
+    <strong id="ttit">Download Starting</strong>
+    <span id="tmsg">Your PDF is being downloaded...</span>
+  </div>
+</div>
+
+<script>
+// ── DATA ─────────────────────────────────────────────────────
+const pdfs=[
+  {id:1,title:"MS Excel Complete Book 2.3",cat:"Microsoft Excel",
+   desc:"Comprehensive Excel guide covering formulas, functions, charts, data analysis and advanced features — perfect for all skill levels.",
+   icon:"📊",tag:"Excel",pages:"200+",lang:"Bengali / English",
+   url:"https://file-rajshahi.portal.gov.bd/media/57f547b0-c055-4fdf-b56f-33922db90cf4/uploaded-files/ms%20axcel%20main%20book%202.3%20pdf.pdf"},
+  {id:2,title:"Computer Keyboard Shortcuts",cat:"Computer Tips",
+   desc:"Master essential keyboard shortcuts for Windows, MS Office and browsers. Speed up your workflow with this must-have quick-reference PDF.",
+   icon:"⌨️",tag:"Shortcuts",pages:"50+",lang:"English",
+   url:"https://faculty.kfupm.edu.sa/ee/ibrahimh/misc/COMPUTER%20SHORTCUTS.pdf"},
+  {id:3,title:"PowerPoint Complete Guide (Bengali)",cat:"Microsoft PowerPoint",
+   desc:"Learn MS PowerPoint in Bengali from scratch. Covers slides, animations, transitions, themes and presentation design.",
+   icon:"📑",tag:"PowerPoint",pages:"80+",lang:"Bengali",
+   url:"https://ubtec.org.in/UploadedFiles/408010Asec%20powerpoint%20bengali.pdf"}
+];
+
+// ── RIBBON ───────────────────────────────────────────────────
+(function(){
+  const items=Array(8).fill([
+    "✦ ARIJIT MAHATA","★ INDIA'S BEST CODING TEACHER",
+    "✦ ARIJITPEDIA","★ FREE PDF RESOURCES"
+  ]).flat();
+  document.getElementById('rt').innerHTML=items.map(i=>`<span>${i}</span>`).join('');
+})();
+
+// ── PARTICLES ────────────────────────────────────────────────
+(function(){
+  const c=document.getElementById('particles');
+  for(let i=0;i<18;i++){
+    const p=document.createElement('div');
+    p.className='particle';
+    const s=Math.random()*5+2;
+    Object.assign(p.style,{
+      width:s+'px',height:s+'px',
+      left:Math.random()*100+'%',
+      animationDuration:(Math.random()*18+12)+'s',
+      animationDelay:(Math.random()*15)+'s'
+    });
+    c.appendChild(p);
+  }
+})();
+
+// ── BUILD CARD ───────────────────────────────────────────────
+function card(p){
+  return `<article class="pcard" aria-label="${p.title} PDF">
+    <div class="ch">
+      <div class="chbg"></div><div class="chpat"></div>
+      <div class="cfree">FREE</div>
+      <div class="cbadge">${p.tag}</div>
+      <div class="cion">${p.icon}</div>
+    </div>
+    <div class="cb">
+      <div class="ccat">${p.cat}</div>
+      <h3 class="ctit">${p.title}</h3>
+      <p class="cdesc">${p.desc}</p>
+      <div class="cmeta">
+        <span>📄 ${p.pages} pages</span>
+        <span>🌐 ${p.lang}</span>
+      </div>
+      <a href="${p.url}" class="bdl" download target="_blank" rel="noopener noreferrer"
+         aria-label="Download ${p.title} free PDF"
+         onclick="toast('${p.title.replace(/'/g,"\\'")}')">
+        <span>📥</span><span>Download Free PDF</span>
+      </a>
+    </div>
+  </article>`;
+}
+
+// ── RENDER ───────────────────────────────────────────────────
+function render(){
+  ['homegrid','allgrid'].forEach(id=>{
+    document.getElementById(id).innerHTML=pdfs.map(card).join('');
+  });
+  observeCards();
+}
+
+// ── OBSERVER ─────────────────────────────────────────────────
+function observeCards(){
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach((e,i)=>{
+      if(e.isIntersecting){
+        setTimeout(()=>e.target.classList.add('revealed'),i*130);
+        io.unobserve(e.target);
+      }
+    });
+  },{threshold:.12});
+  document.querySelectorAll('.pcard').forEach(c=>io.observe(c));
+}
+
+// ── TOAST ────────────────────────────────────────────────────
+let tt;
+function toast(title){
+  const el=document.getElementById('toast');
+  document.getElementById('ttit').textContent='Download Starting!';
+  document.getElementById('tmsg').textContent='"'+title+'" is being downloaded...';
+  el.classList.add('show');
+  clearTimeout(tt);
+  tt=setTimeout(()=>el.classList.remove('show'),3500);
+}
+
+// ── ROUTING ──────────────────────────────────────────────────
+function nav(page){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const t=document.getElementById('page-'+page);
+  if(t){ t.classList.add('active'); window.scrollTo({top:0,behavior:'smooth'}); }
+  document.querySelectorAll('[data-page]').forEach(a=>
+    a.classList.toggle('active',a.dataset.page===page)
+  );
+  if(page==='about') animSkills();
+  setTimeout(observeCards,100);
+  closeMob();
+}
+
+// ── SKILL BARS ───────────────────────────────────────────────
+function animSkills(){
+  document.querySelectorAll('.sf').forEach(b=>{
+    b.style.width='0';
+    setTimeout(()=>{ b.style.width=b.dataset.w+'%'; },200);
+  });
+}
+const skio=new IntersectionObserver(entries=>{
+  if(entries[0].isIntersecting){ animSkills(); skio.disconnect(); }
+},{threshold:.3});
+const sksec=document.querySelector('.ssec');
+if(sksec) skio.observe(sksec);
+
+// ── CLICK DELEGATION ─────────────────────────────────────────
+document.addEventListener('click',e=>{
+  const link=e.target.closest('[data-page]');
+  if(link){ e.preventDefault(); nav(link.dataset.page); }
+});
+
+// ── HAMBURGER ────────────────────────────────────────────────
+const hbg=document.getElementById('hbg');
+const mnav=document.getElementById('mnav');
+const mclose=document.getElementById('mclose');
+function openMob(){ mnav.classList.add('visible'); hbg.classList.add('open'); hbg.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+function closeMob(){ mnav.classList.remove('visible'); hbg.classList.remove('open'); hbg.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+hbg.addEventListener('click',()=>mnav.classList.contains('visible')?closeMob():openMob());
+mclose.addEventListener('click',closeMob);
+mnav.addEventListener('click',e=>{ if(e.target===mnav) closeMob(); });
+
+// ── INIT ─────────────────────────────────────────────────────
+render();
+</script>
+</body>
+</html>
